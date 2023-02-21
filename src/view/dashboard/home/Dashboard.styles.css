@@ -1,0 +1,22 @@
+* {
+  font-family: sans-serif;
+}
+.main {
+  background-color: var(--text-color-white);
+  overflow: hidden;
+}
+.mainpagehead {
+  margin-top: 75px;
+}
+.carousel-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.carousel-indicators .button {
+  background-color: var(--primary-color) !important;
+  width: 1rem !important;
+  height: 1rem !important;
+  border-radius: 100%;
+  /* top: 25px !important; */
+}
