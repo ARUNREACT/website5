@@ -227,8 +227,14 @@
   font-size: 15px;
 }
 
-.banking {
-  height: 250px;
+.banking,
+.payment,
+.tours,
+.bada,
+.suraksha,
+.devices,
+.contactus {
+  height: 280px;
   width: 100%;
   background-size: cover;
   background-position: center;
@@ -237,9 +243,34 @@
   background-blend-mode: multiply;
   background-image: url("https://i0.wp.com/www.globaltrademag.com/wp-content/uploads/2020/12/shutterstock_image-2-2.png?fit=757%2C393&ssl=1");
 }
-.banking h1 {
+.payment {
+  background-image: url("https://c0.wallpaperflare.com/preview/1018/601/104/apartment-browsing-communication-connection.jpg");
+}
+.tours {
+  background-image: url("https://png.pngtree.com/thumb_back/fh260/back_our/20190619/ourmid/pngtree-travel-around-the-world-travel-poster-template-image_140335.jpg");
+}
+.bada {
+  background-image: url("https://thumbs.dreamstime.com/b/crowded-city-street-bara-bazar-lively-shopping-district-calcutta-busy-working-day-burrabazar-kolkata-west-bengal-india-214185555.jpg");
+}
+.suraksha {
+  background-image: url("https://img.lovepik.com/photo/50064/0806.jpg_wh300.jpg");
+}
+.devices {
+  background-image: url("https://media.istockphoto.com/id/483731108/photo/technology-and-coffee-on-a-wooden-table.jpg?b=1&s=170667a&w=0&k=20&c=_CO1HjY597xwNn7SASXmYE92TMKHcSGC-A-ORKY0uOE=");
+}
+.contactus {
+  background-image: url("https://i0.wp.com/gdcindia.co.in/wp-content/uploads/2019/03/contact-us-background.jpg?ssl=1");
+}
+
+.banking h1,
+.payment h1,
+.tours h1,
+.bada h1,
+.suraksha h1,
+.devices h1,
+.contactus h1 {
   font-size: calc(2rem + 1.5vw);
-  height: 250px;
+  height: 280px;
   font-weight: 600;
   letter-spacing: 1px;
 }
@@ -247,21 +278,79 @@
 .twoslide {
   border-radius: 12px;
 }
-.twoslide-one {
-  display: flex;
-  background-color: #333;
-  border-radius: 12px;
-  margin-bottom: 40px;
-}
+.twoslide-one,
 .twoslide-two {
   display: flex;
-  flex-direction: row-reverse;
+  align-items: center;
+  flex-wrap: wrap;
+  background-color: #f4f4f4;
   border-radius: 12px;
-  background-color: aquamarine;
+  padding: 20px 0px;
+  margin: 40px 0px;
+  min-height: 330px;
+  /* padding: 50px 0px; */
+}
+.twoslide-two {
+  flex-direction: row-reverse;
 }
 .twoslide-one img,
 .twoslide-two img {
-  height: 100%;
-  width: 100%;
+  width: 20rem;
   border-radius: 12px;
+  object-fit: contain;
 }
+
+/* ******************* CONATCT US ******************* */
+.mail {
+  /* border: 1px solid black; */
+}
+.contactus h1 {
+  color: var(--primary-color);
+}
+.mail i {
+  border: 1px solid black;
+  font-size: 30px;
+  height: 50px;
+  width: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  /* padding: 10px 10px; */
+  border-radius: 100%;
+}
+.mail p {
+  text-align: center;
+  font-size: 15px;
+}
+.about-input input,
+.about-input textarea {
+  margin: 13px 0px;
+  border: none;
+  border-radius: 6px;
+  padding: 8px;
+  border: 1px solid grey;
+}
+.about-input textarea {
+  padding: 10px 0px 35px 0px;
+}
+.about-input ::placeholder {
+  font-size: 13px;
+  padding: 0px 10px;
+}
+.about-input button {
+  font-size: 15px;
+  width: 100px;
+  padding: 5px;
+  letter-spacing: 1px;
+  border: none;
+  border-radius: 5px;
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+}
+
+.map {
+  height: 90%;
+  width: 100%;
+}
+/* ******************* CONATCT US ******************* */

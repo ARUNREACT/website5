@@ -106,38 +106,38 @@ export function Header() {
                     />
                     <Headeroption
                       foota={"dropdown-item"}
-                      href={"/"}
+                      href={"/payment"}
                       footaname={"Payment Services"}
                     />
                     <Headeroption
                       foota={"dropdown-item"}
-                      href={"/"}
+                      href={"/tours"}
                       footaname={"Tours & Travel Services"}
                     />
                     <Headeroption
                       foota={"dropdown-item"}
-                      href={"/"}
+                      href={"/bada"}
                       footaname={"Bada Bazar"}
                     />
                     <Headeroption
                       foota={"dropdown-item"}
-                      href={"/"}
+                      href={"/suraksha"}
                       footaname={"Suraksha"}
                     />
                     <Headeroption
                       foota={"dropdown-item"}
-                      href={"/Loan Services"}
-                      footaname={"BBPS Recharges"}
+                      href={"/loan"}
+                      footaname={"Loan Services"}
                     />
                     <Headeroption
                       foota={"dropdown-item"}
-                      href={"/Devices & Other Services"}
-                      footaname={"MSME Loan"}
+                      href={"/devices"}
+                      footaname={"Devices & Other Services"}
                     />
                   </ul>
                 </li>
                 <li className="nav-item dropdown">
-                  <a className="nav-link" href="#">
+                  <a className="nav-link" href="/contactus">
                     Contact Us
                   </a>
                 </li>

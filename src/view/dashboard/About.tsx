@@ -12,7 +12,7 @@ export function About() {
           </h1>
         </div>
 
-        <div className="py-4 my-4">
+        <div className="py-4 my-4 d-flex flex-column">
           <h1 className="fw-bold text-center py-4">Our Journey</h1>
           <img
             className="img-fluid"

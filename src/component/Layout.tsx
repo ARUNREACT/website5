@@ -54,13 +54,23 @@ export function Slider(props: any) {
 export function Twoslide(props: any) {
   return (
     <div className={props.classname}>
-      <div className="col-sm-8 py-4">
+      <div className="col-md-8 col-12">
         <h1>{props.h1}</h1>
         <p>{props.p}</p>
       </div>
-      <div>
-        <img className="img-fluid col-sm-4 m-0 p-0" src={props.img} alt="" />
+      <div className="col-md-4 col-12 d-flex justify-content-center ">
+        <img className="img-fluid" src={props.img} alt="" />
       </div>
+    </div>
+  );
+}
+
+export function Mail(props: any) {
+  return (
+    <div className="col-md-4 col-12 mx-auto d-flex flex-column align-items-center mail py-3">
+      <i className={props.icon}></i>
+      <p className="mt-3">{props.p1}</p>
+      <p>{props.p2}</p>
     </div>
   );
 }
