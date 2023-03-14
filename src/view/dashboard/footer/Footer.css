@@ -34,7 +34,7 @@
   color: #ffffff;
   margin-top: 8px;
   width: 190px;
-  font-size: 13.5px;
+  font-size: 13px;
   letter-spacing: 0.5px;
 }
 .option a:hover {
@@ -58,6 +58,7 @@
 }
 .social i:hover {
   color: var(--secondary-color);
+  cursor: pointer;
 }
 
 .foot-address a {
@@ -72,7 +73,7 @@
   color: rgb(147, 147, 147);
 }
 .last {
-  font-size: 11px;
+  font-size: 10px !important;
   letter-spacing: 1.5px;
   color: rgb(255, 255, 255);
 }

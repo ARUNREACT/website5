@@ -8,14 +8,22 @@ export function Contactus() {
       <Header />
       <div className="mainpagehead">
         <div className="contactus">
-          <h1 className="text-center d-flex align-items-center text-white justify-content-center">
+          <h1
+            data-aos="slide-right"
+            className="text-center d-flex align-items-center text-white justify-content-center"
+          >
             Contact us
           </h1>
         </div>
 
         <div className="py-md-5 py-2">
-          <h1 className="text-center fw-bold">We are here to help</h1>
-          <div className="d-flex flex-wrap col-md-11 mx-auto">
+          <h1 data-aos="fade-right" className="text-center fw-bold">
+            We are here to help
+          </h1>
+          <div
+            className="d-flex flex-wrap col-md-11 mx-auto"
+            data-aos="fade-up"
+          >
             <Mail
               icon={"fa fa-phone"}
               p1={`+91 120 3986786, +91 120 5077786`}
@@ -31,7 +39,7 @@ export function Contactus() {
         </div>
 
         <div className="col-lg-11 col-12 mx-auto d-flex p-0 flex-wrap ">
-          <div className="col-md-6 col-12 p-3">
+          <div className="col-md-6 col-12 p-3" data-aos="fade-up">
             <h3 className="mb-3 fw-bold">Spice Money Corporate Office</h3>
             <p>
               <strong>Address:</strong>Spice Money Limited, Spice Global
@@ -77,16 +85,11 @@ export function Contactus() {
               <button>Submit</button>
             </div>
           </div>
-          <div className="col-md-6 col-12">
+          <div className="col-md-6 col-12" data-aos="zoom-in">
             <iframe
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3924.65032837567!2d78.80688921424331!3d10.369818369403879!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b0079b31104e759%3A0x956c030a29bd68ff!2sPayPe%20Technologies%20Private%20Limited!5e0!3m2!1sen!2sin!4v1677848314235!5m2!1sen!2sin"
-              //   width="600"
-              //   height="450"
               className="map"
-              //   style="border:0;"
-              //   allowfullscreen=""
               loading="lazy"
-              //   referrerpolicy="no-referrer-when-downgrade"
             ></iframe>
           </div>
         </div>

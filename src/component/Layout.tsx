@@ -1,22 +1,10 @@
 import "../component/Layout.css";
 
-// export function Carousel(props: any) {
-//   return (
-//     <div className={props.classname} data-bs-interval={props.interval}>
-//       <img src={props.img} className="d-block img-fluid w-100" alt="..." />
-//       <div className="carousel-captio">
-//         <h1 className="">{props.h1}</h1>
-//         <p>{props.p}</p>
-//       </div>
-//     </div>
-//   );
-// }
-
 export function Services(props: any) {
   return (
-    <div className="services mt-4">
-      <img src={props.img} alt="" />
-      <i className={props.icon}></i>
+    <div className="services mt-4" data-aos="fade-up">
+      <img data-aos="zoom-in" src={props.img} alt="" />
+      <i data-aos="zoom-in" className={props.icon}></i>
       <h6 className="">
         {props.h5}
         <span>{props.span}</span>
@@ -44,9 +32,13 @@ export function Sliderinput(props: any) {
 export function Slider(props: any) {
   return (
     <div className="slider__contents">
-      <img src={props.img} className="slider__image"></img>
-      <h5 className="slider__caption">{props.h5}</h5>
-      <p className="slider__txt">{props.p}</p>
+      <img data-aos="fade-up" src={props.img} className="slider__image"></img>
+      <h5 data-aos="fade-up" className="slider__caption">
+        {props.h5}
+      </h5>
+      <p data-aos="fade-up" className="slider__txt">
+        {props.p}
+      </p>
     </div>
   );
 }
@@ -54,12 +46,12 @@ export function Slider(props: any) {
 export function Twoslide(props: any) {
   return (
     <div className={props.classname}>
-      <div className="col-md-8 col-12">
+      <div data-aos="fade-up" className="col-md-8 col-12">
         <h1>{props.h1}</h1>
         <p>{props.p}</p>
       </div>
       <div className="col-md-4 col-12 d-flex justify-content-center ">
-        <img className="img-fluid" src={props.img} alt="" />
+        <img data-aos="zoom-in" className="img-fluid" src={props.img} alt="" />
       </div>
     </div>
   );
@@ -71,6 +63,32 @@ export function Mail(props: any) {
       <i className={props.icon}></i>
       <p className="mt-3">{props.p1}</p>
       <p>{props.p2}</p>
+    </div>
+  );
+}
+
+export function Input(props: any) {
+  return (
+    <div
+      data-aos="slide-up"
+      className="input-div col-lg-10 col-md-11 col-sm-7 col-12"
+    >
+      <i className={props.icon}></i>
+      <input
+        className="input-field col-sm-11 col-10"
+        placeholder={props.placeholder}
+        type={props.type}
+      />
+      <span className={props.bar}></span>
+    </div>
+  );
+}
+export function Button(props: any) {
+  return (
+    <div className="d-flex justify-content-center pt-5">
+      <button data-aos="fade-up" className={props.btnclassname}>
+        {props.btnvalue}
+      </button>
     </div>
   );
 }

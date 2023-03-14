@@ -8,7 +8,10 @@ export function Banking() {
       <Header />
       <div className="mainpagehead">
         <div className="banking">
-          <h1 className="text-center d-flex align-items-center text-white justify-content-center">
+          <h1
+            data-aos="slide-right"
+            className="text-center d-flex align-items-center text-white justify-content-center"
+          >
             Banking Services
           </h1>
         </div>
@@ -26,23 +29,19 @@ export function Banking() {
             classname={"twoslide-one"}
             h1={`AePS (Aadhaar Enabled Payment System)`}
             p={`The Spice Money AePS service enables the customer to use their Aadhaar card to access their Aadhaar-linked bank account and carry out basic banking transactions like withdrawals, deposits, balance enquiry, and bank transfers. These transactions can be easily done using a secure Biometric Scanner which is available with all Adhikaris at Spice Money with Digital Dukaan.`}
-            img={
-              "https://onlinedigitalsevakendra.in/Content/Homepage/images/aeps.png"
-            }
+            img={require("../../../asset/sample1/main-services/ms1.png")}
           />
           <Twoslide
             classname={" twoslide-two"}
             h1={`Money Transfer (DMT)`}
             p={`Spice Money customers can transfer money between different banks spread across a wide network. With the help of Adhikaris, they can remit funds across all major nationalized and private banks that operate in India. This is a secure money transfer process with multiple authentication levels to ensure optimum safety. Spice Money Wallet is an RBI approved semi-closed PPI wallet linked to the sender’s mobile number which makes it very secure.`}
-            img={
-              "https://www.globaltax.in/Content/HomePage/images/moneyTransfer%20Home.png"
-            }
+            img={require("../../../asset/sample1/main-services/ms2.png")}
           />
           <Twoslide
             classname={"twoslide-one"}
             h1={`Cash withdrawal through mini ATM`}
             p={`With the help of the Spice Money MiniATM, Adhikaris can now withdraw cash for their customers with Debit & Credit cards. You can withdraw cash with all major cards like RuPay, Master, Visa, and Maestro.`}
-            img={"https://digitalpay.co.in/assets/images/AEPS-Top-Image.png"}
+            img={require("../../../asset/sample1/main-services/ms3.png")}
           />
         </div>
       </div>

@@ -85,6 +85,11 @@ export function Header() {
             <div className="offcanvas-body p-lg-0 ">
               <ul className="navbar-nav">
                 <li className="nav-item dropdown">
+                  <a className="nav-link" href="/">
+                    Home
+                  </a>
+                </li>
+                <li className="nav-item dropdown">
                   <a className="nav-link" href="/about">
                     About us
                   </a>
@@ -143,27 +148,10 @@ export function Header() {
                 </li>
               </ul>
               <ul className="navbar-nav">
-                <li className="nav-item dropdown">
-                  <a
-                    className="nav-link dropdown-toggle"
-                    href="#"
-                    data-bs-toggle="dropdown"
-                  >
+                <li className="nav-item">
+                  <a className="nav-link" href="/login">
                     Logins
                   </a>
-
-                  <ul className="dropdown-menu ">
-                    <Headeroption
-                      foota={"dropdown-item"}
-                      href={"#"}
-                      footaname={"login"}
-                    />
-                    <Headeroption
-                      foota={"dropdown-item"}
-                      href={"#"}
-                      footaname={"Signup"}
-                    />
-                  </ul>
                 </li>
               </ul>
             </div>

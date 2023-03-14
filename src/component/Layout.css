@@ -1,5 +1,3 @@
-/* *************** carousel ******************* */
-
 .join-now div {
   display: flex;
   align-items: center;
@@ -12,6 +10,14 @@
   color: var(--text-color-white);
   padding: 6px 30px;
   border-radius: 100px;
+  outline: none;
+  border: none;
+  transition: 0.5s all;
+}
+.join-now button:hover {
+  background-color: var(--secondary-color);
+  border: 1px solid var(--primary-color);
+  color: var(--text-color-black);
 }
 .one {
   background-color: #00203fff;
@@ -23,7 +29,6 @@
   background-color: #adefd1ff;
 }
 
-/* **************SERVICES**************** */
 .main-services h2 {
   color: var(--primary-color);
 }
@@ -48,7 +53,7 @@
   font-size: 14px;
   height: 30px;
   margin: 15px 0px;
-  /* background-color: aquamarine; */
+
   color: var(--primary-color);
 }
 
@@ -60,7 +65,7 @@
   font-size: 14px;
   border-radius: 100px;
 }
-/* **************MAIN-SERVICES**************** */
+
 .main-services-two a {
   display: none;
 }
@@ -86,13 +91,13 @@
   color: var(--primary-color);
   text-shadow: 1px 1px var(--text-color-white);
 }
-/* **************OUR-PARTNERS**************** */
+
 .our-partners img {
   background-color: #ffffff;
   padding: 5px;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
-    rgba(0, 0, 0, 0.3) 0px 1px 3px -1px; /* border: 1px solid black; */
-  animation: slide 5s linear infinite;
+    rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  animation: slide 10s linear infinite;
   margin: 0 10px;
   width: 180px;
   border-radius: 6px;
@@ -113,7 +118,6 @@
   display: flex;
   align-items: flex-end;
   justify-content: center;
-  /* background-color: aqua; */
 }
 .slider__nav {
   width: 12px;
@@ -141,9 +145,7 @@
 .slider__nav:checked:nth-of-type(3) ~ .slider__inner {
   left: -200%;
 }
-/* .slider__nav:checked:nth-of-type(4) ~ .slider__inner {
-  left: -300%;
-} */
+
 .slider__inner {
   position: absolute;
   top: 0;
@@ -205,7 +207,6 @@
   }
 }
 
-/* **************ABOUT-US**************** */
 .about-main-img {
   height: 250px;
   width: 100%;
@@ -214,7 +215,7 @@
   background-repeat: no-repeat;
   background-color: #001f3fd2;
   background-blend-mode: multiply;
-  background-image: url("https://www.way2webworld.com/images/aboutbanner.jpg");
+  background-image: url("../asset/sample1/b1.png");
 }
 .about-main-img h1 {
   font-size: calc(2rem + 1.5vw);
@@ -234,32 +235,32 @@
 .suraksha,
 .devices,
 .contactus {
-  height: 280px;
+  height: 300px;
   width: 100%;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   background-color: #001f3fd2;
   background-blend-mode: multiply;
-  background-image: url("https://i0.wp.com/www.globaltrademag.com/wp-content/uploads/2020/12/shutterstock_image-2-2.png?fit=757%2C393&ssl=1");
+  background-image: url("../asset/sample1/b2.png");
 }
 .payment {
-  background-image: url("https://c0.wallpaperflare.com/preview/1018/601/104/apartment-browsing-communication-connection.jpg");
+  background-image: url("../asset/sample1/b3.png");
 }
 .tours {
-  background-image: url("https://png.pngtree.com/thumb_back/fh260/back_our/20190619/ourmid/pngtree-travel-around-the-world-travel-poster-template-image_140335.jpg");
+  background-image: url("../asset/sample1/b4.png");
 }
 .bada {
-  background-image: url("https://thumbs.dreamstime.com/b/crowded-city-street-bara-bazar-lively-shopping-district-calcutta-busy-working-day-burrabazar-kolkata-west-bengal-india-214185555.jpg");
+  background-image: url("../asset/sample1/b5.png");
 }
 .suraksha {
-  background-image: url("https://img.lovepik.com/photo/50064/0806.jpg_wh300.jpg");
+  background-image: url("../asset/sample1/b6.png");
 }
 .devices {
-  background-image: url("https://media.istockphoto.com/id/483731108/photo/technology-and-coffee-on-a-wooden-table.jpg?b=1&s=170667a&w=0&k=20&c=_CO1HjY597xwNn7SASXmYE92TMKHcSGC-A-ORKY0uOE=");
+  background-image: url("../asset/sample1/b7.png");
 }
 .contactus {
-  background-image: url("https://i0.wp.com/gdcindia.co.in/wp-content/uploads/2019/03/contact-us-background.jpg?ssl=1");
+  background-image: url("../asset/sample1/b8.png");
 }
 
 .banking h1,
@@ -270,7 +271,7 @@
 .devices h1,
 .contactus h1 {
   font-size: calc(2rem + 1.5vw);
-  height: 280px;
+  height: 300px;
   font-weight: 600;
   letter-spacing: 1px;
 }
@@ -288,7 +289,8 @@
   padding: 20px 0px;
   margin: 40px 0px;
   min-height: 330px;
-  /* padding: 50px 0px; */
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
+    rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
 }
 .twoslide-two {
   flex-direction: row-reverse;
@@ -300,9 +302,7 @@
   object-fit: contain;
 }
 
-/* ******************* CONATCT US ******************* */
 .mail {
-  /* border: 1px solid black; */
 }
 .contactus h1 {
   color: var(--primary-color);
@@ -316,7 +316,7 @@
   justify-content: center;
   align-items: center;
   padding: 20px;
-  /* padding: 10px 10px; */
+
   border-radius: 100%;
 }
 .mail p {
@@ -353,4 +353,3 @@
   height: 90%;
   width: 100%;
 }
-/* ******************* CONATCT US ******************* */

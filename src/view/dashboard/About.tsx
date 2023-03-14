@@ -7,16 +7,22 @@ export function About() {
       <Header />
       <div className="mainpagehead">
         <div className="about-main-img">
-          <h1 className="text-center d-flex align-items-end text-white pb-4 justify-content-center">
+          <h1
+            data-aos="slide-right"
+            className="text-center d-flex align-items-end text-white pb-4 justify-content-center"
+          >
             ABOUT US
           </h1>
         </div>
 
         <div className="py-4 my-4 d-flex flex-column">
-          <h1 className="fw-bold text-center py-4">Our Journey</h1>
+          <h1 data-aos="fade-up" className="fw-bold text-center py-4">
+            Our Journey
+          </h1>
           <img
+            data-aos="zoom-in"
             className="img-fluid"
-            src="https://i0.wp.com/suvastika.com/new/wp-content/uploads/2011/12/safty-features.jpeg?resize=1030%2C268&ssl=1"
+            src={require("../../asset/sample1/a1.png")}
             alt=""
           />
         </div>

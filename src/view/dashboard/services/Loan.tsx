@@ -8,7 +8,10 @@ export function Loan() {
       <Header />
       <div className="mainpagehead">
         <div className="payment">
-          <h1 className="text-center d-flex align-items-center text-white justify-content-center">
+          <h1
+            data-aos="slide-right"
+            className="text-center d-flex align-items-center text-white justify-content-center"
+          >
             Loan Services
           </h1>
         </div>
@@ -24,17 +27,13 @@ export function Loan() {
             classname={"twoslide-one"}
             h1={`Grahak Loan`}
             p={`Spice Money Grahak loans are made available for Spice Money Adhikaris to offer to their customers. Through the Grahak Loan, Adhikaris can provide instant loans to their customers as per their requirements. These loans are provided by trusted Banks/NBFCs at low interest rates without unnecessary paperwork.`}
-            img={
-              "https://m.economictimes.com/thumb/msid-76321632,width-1200,height-900,resizemode-4,imgsize-1022379/home-loan-getty-34.jpg"
-            }
+            img={require("../../../asset/sample1/main-services/ms17.png")}
           />
           <Twoslide
             classname={" twoslide-two"}
             h1={`Adhikari Loan`}
             p={`Spice Money Adhikaris have access to secure loans at low interest rates from a wide network of Banks and NBFCs across India. These loans allow him to invest in his business and expand the same, bringing growth.`}
-            img={
-              "https://spicemoney.com/assets/images/services/adhikari-loan.jpg"
-            }
+            img={require("../../../asset/sample1/main-services/ms18.png")}
           />
         </div>
       </div>

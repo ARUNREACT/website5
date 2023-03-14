@@ -8,7 +8,10 @@ export function Devices() {
       <Header />
       <div className="mainpagehead">
         <div className="devices">
-          <h1 className="text-center d-flex align-items-center text-white justify-content-center">
+          <h1
+            data-aos="slide-right"
+            className="text-center d-flex align-items-center text-white justify-content-center"
+          >
             Devices & Others Services
           </h1>
         </div>
@@ -22,17 +25,13 @@ export function Devices() {
             classname={"twoslide-one"}
             h1={`Biometric Devices, Printer`}
             p={`Adhikaris can buy biometric devices and printers from Spice Money to carry out seamless operations and provide hassle-free services to their customers.`}
-            img={
-              "https://www.idemia.com/wp-content/uploads/2020/10/mso-1300-series-idemia-450x256.jpg"
-            }
+            img={require("../../../asset/sample1/main-services/ms19.png")}
           />
           <Twoslide
             classname={" twoslide-two"}
             h1={`Pan Card Services`}
             p={`Spice Money Adhikaris can now get a new PAN card made or get an existing one updated through authorized government channels. Our strong and secure network provides seamless service, making the whole process quick and hassle-free for our customers.`}
-            img={
-              "https://egov.eletsonline.com/wp-content/uploads/2017/04/PAN-Card.png"
-            }
+            img={require("../../../asset/sample1/main-services/ms20.png")}
           />
         </div>
       </div>

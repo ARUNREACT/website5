@@ -12,6 +12,7 @@ import { Suraksha } from "../view/dashboard/services/Suraksha";
 import { Loan } from "../view/dashboard/services/Loan";
 import { Devices } from "../view/dashboard/services/Devices";
 import { Contactus } from "../view/dashboard/contactus/Contactus";
+import { Login } from "../view/dashboard/Login";
 
 function MainNavigator() {
   return (
@@ -30,6 +31,7 @@ function MainNavigator() {
 
         <Route path="header" element={<Header />} />
         <Route path="footer" element={<Footer />} />
+        <Route path="login" element={<Login />} />
       </Routes>
     </div>
   );

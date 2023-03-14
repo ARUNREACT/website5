@@ -15,7 +15,11 @@ export function Dashboard() {
       <Header />
       <div className="mainpagehead p-0 home ">
         <div>
-          <div id="carouselExampleCaptions" className="carousel slide">
+          <div
+            id="carouselExampleCaptions"
+            className="carousel slide"
+            data-aos="zoom-in"
+          >
             <div className="carousel-indicators">
               <button
                 type="button"
@@ -43,21 +47,21 @@ export function Dashboard() {
             <div className="carousel-inner">
               <div className="carousel-item active">
                 <img
-                  src="https://www.spicemoney.com/Admin/operation/image/slider/1639741531slider05-english.jpg"
+                  src={require("../../../asset/sample1/h1.png")}
                   className="img-fluid "
                   alt="."
                 />
               </div>
               <div className="carousel-item">
                 <img
-                  src="https://www.spicemoney.com/Admin/operation/image/slider/1648106636slider05.jpg"
+                  src={require("../../../asset/sample1/h2.png")}
                   className="img-fluid "
                   alt="."
                 />
               </div>
               <div className="carousel-item">
                 <img
-                  src="https://www.spicemoney.com/Admin/operation/image/slider/1670577492Great-place-to-work-Web-banner.jpg"
+                  src={require("../../../asset/sample1/h3.png")}
                   className="img-fluid "
                   alt="."
                 />
@@ -91,65 +95,72 @@ export function Dashboard() {
         </div>
 
         <div className="py-5 main-services">
-          <h2 className="text-center fw-bold">OUR SERVICES</h2>
+          <h2 className="text-center fw-bold" data-aos="slide-right">
+            OUR SERVICES
+          </h2>
           <div className="d-flex flex-wrap justify-content-around">
             <Services
-              img={"https://cdn-icons-png.flaticon.com/512/66/66455.png"}
+              img={require("../../../asset/sample1/services/s1.png")}
               h5={`Banking `}
               span={`Services`}
-              href={"#"}
+              href={"/banking"}
             />
             <Services
-              img={"https://cdn-icons-png.flaticon.com/512/69/69024.png"}
+              img={require("../../../asset/sample1/services/s2.png")}
               h5={`Payment `}
               span={`Services`}
-              href={"#"}
+              href={"/payment"}
             />
             <Services
-              img={"https://cdn-icons-png.flaticon.com/512/48/48792.png"}
+              img={require("../../../asset/sample1/services/s3.png")}
               h5={`Tours `}
               span={`& Travels`}
-              href={"#"}
+              href={"tours"}
             />
             <Services
-              img={"https://cdn-icons-png.flaticon.com/512/1149/1149983.png"}
+              img={require("../../../asset/sample1/services/s4.png")}
               h5={`Bada `}
               span={`Bazaar`}
-              href={"#"}
+              href={"/bada"}
             />
             <Services
-              img={"https://cdn-icons-png.flaticon.com/512/921/921305.png"}
+              img={require("../../../asset/sample1/services/s5.png")}
               h5={`Surak `}
               span={`sha`}
-              href={"#"}
+              href={"/suraksha"}
             />
             <Services
-              img={"https://cdn-icons-png.flaticon.com/512/2660/2660135.png"}
+              img={require("../../../asset/sample1/services/s6.png")}
               h5={`Loan `}
               span={`Services`}
-              href={"#"}
+              href={"/loan"}
             />
             <Services
-              img={"https://cdn-icons-png.flaticon.com/512/0/191.png"}
+              img={require("../../../asset/sample1/services/s7.png")}
               h5={`Devices `}
               span={`& Other Services`}
-              href={"#"}
+              href={"/devices"}
             />
           </div>
         </div>
         <div className="d-flex flex-wrap  py-3 join-now">
-          <div className="col-md-8 col-12 bg-dangr one px-sm-4 px-2">
+          <div
+            className="col-md-8 col-12 bg-dangr one px-sm-4 px-2"
+            data-aos="slide-right"
+          >
             <h2>
               Zero lagat aur Zero monthly rental se shuru karein apni Digital
               Dukaan
             </h2>
           </div>
-          <div className="col-md-4 col-12 bg-succss two">
+          <div className="col-md-4 col-12 bg-succss two" data-aos="slide-left">
             <button>Join Now</button>
           </div>
         </div>
         <div className="py-5 mt-5 main-services-two ">
-          <h2 className="text-center fw-bold ">Advantages of Spice Money</h2>
+          <h2 className="text-center fw-bold " data-aos="slide-right">
+            Advantages of Spice Money
+          </h2>
           <div className="d-flex flex-wrap col-lg-11 mx-auto justify-content-around">
             <Services
               icon={"fa fa-line-chart"}
@@ -178,42 +189,30 @@ export function Dashboard() {
           </div>
         </div>
         <div className="bg-white">
-          <h2 className="text-center fw-bold mt-5 ">Our Partners</h2>
-          <div className="d-flex py-5 our-partners">
-            <Scroll
-              img={"https://spicemoney.com/assets/images/partner/07.jpg"}
-            />
-            <Scroll
-              img={"https://spicemoney.com/assets/images/partner/08.jpg"}
-            />
-            <Scroll
-              img={"https://spicemoney.com/assets/images/partner/09.jpg"}
-            />
-            <Scroll
-              img={"https://spicemoney.com/assets/images/partner/010.jpg"}
-            />
-            <Scroll
-              img={"https://spicemoney.com/assets/images/partner/011.jpg"}
-            />
-            <Scroll
-              img={"https://spicemoney.com/assets/images/partner/013.jpg"}
-            />
-            <Scroll
-              img={"https://spicemoney.com/assets/images/partner/07.jpg"}
-            />
+          <h2 className="text-center fw-bold mt-5 " data-aos="slide-right">
+            Our Partners
+          </h2>
+          <div className="d-flex py-5 our-partners" data-aos="slide-in">
+            <Scroll img={require("../../../asset/sample1/partner/p1.png")} />
+            <Scroll img={require("../../../asset/sample1/partner/p2.png")} />
+            <Scroll img={require("../../../asset/sample1/partner/p3.png")} />
+            <Scroll img={require("../../../asset/sample1/partner/p4.png")} />
+            <Scroll img={require("../../../asset/sample1/partner/p5.png")} />
+            <Scroll img={require("../../../asset/sample1/partner/p6.png")} />
+            <Scroll img={require("../../../asset/sample1/partner/p7.png")} />
           </div>
         </div>
         <div>
-          <h2 className="fw-bold text-center pt-4">TESTIMONIAL</h2>
+          <h2 className="fw-bold text-center pt-4" data-aos="slide-right">
+            TESTIMONIAL
+          </h2>
           <div className="slider">
             <Sliderinput type={"slide1"} />
             <Sliderinput type={"slide2"} />
             <Sliderinput type={"slide3"} />
             <div className="slider__inner">
               <Slider
-                img={
-                  "https://cdn.pixabay.com/photo/2019/02/22/17/04/man-4013984_1280.png"
-                }
+                img={require("../../../asset/sample1/human.png")}
                 h5={`Amit Kumar Srivastava`}
                 p={`Spice Money has helped me establish and expand my business. I
             have been using Spice Money services like AePS, Bill Payment,
@@ -222,9 +221,7 @@ export function Dashboard() {
             is the best fintech company, in my opinion.`}
               />
               <Slider
-                img={
-                  "https://cdn.pixabay.com/photo/2019/02/22/17/04/man-4013984_1280.png"
-                }
+                img={require("../../../asset/sample1/human.png")}
                 h5={`Amit Kumar Srivastava`}
                 p={`Spice Money has helped me establish and expand my business. I
             have been using Spice Money services like AePS, Bill Payment,
@@ -233,9 +230,7 @@ export function Dashboard() {
             is the best fintech company, in my opinion.`}
               />
               <Slider
-                img={
-                  "https://cdn.pixabay.com/photo/2019/02/22/17/04/man-4013984_1280.png"
-                }
+                img={require("../../../asset/sample1/human.png")}
                 h5={`Amit Kumar Srivastava`}
                 p={`Spice Money has helped me establish and expand my business. I
             have been using Spice Money services like AePS, Bill Payment,

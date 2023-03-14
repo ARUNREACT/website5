@@ -8,7 +8,10 @@ export function Bada() {
       <Header />
       <div className="mainpagehead">
         <div className="bada">
-          <h1 className="text-center d-flex align-items-center text-white justify-content-center">
+          <h1
+            data-aos="slide-right"
+            className="text-center d-flex align-items-center text-white justify-content-center"
+          >
             Bada Bazar
           </h1>
         </div>
@@ -24,15 +27,13 @@ export function Bada() {
             classname={"twoslide-one"}
             h1={`IFFCO Bazar`}
             p={`The IFFCO Bazar is the largest online market for agricultural products. Farmers can place the order with the local Spice Money Adhikari and get the products delivered to them. Through IFFCO Bazar Adhikari gets an opportunity to build an e-commerce business with zero investment.`}
-            img={
-              "https://cdn-forum.iffcobazar.in/gallery/exhibitions/thumb/IFFCO-eBazar-Gallery-94.jpg"
-            }
+            img={require("../../../asset/sample1/main-services/ms13.png")}
           />
           <Twoslide
             classname={" twoslide-two"}
             h1={`Amazon Easy`}
             p={`Amazon easy is a wonderful opportunity for semi-urban and rural consumers to order products from Amazon which is one of the largest e-commerce players. Consumers get great products with good discounts & offers and Spice Money Adhikaris get an opportunity to get benefitted with growth of online purchase.`}
-            img={"https://upcsc.vayamtech.com/vayam/vayam_files/img/amazon.png"}
+            img={require("../../../asset/sample1/main-services/ms14.png")}
           />
         </div>
       </div>
